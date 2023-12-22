@@ -7,6 +7,10 @@ app.get("/", (req, res) => {
     res.send({message : "API is working"})
 })
 
+app.get("/help", (req, res) => {
+    res.send({message: "API is working fine."})
+})
+
 const port = process.env.PORT
 
 app.listen(port, () => {
